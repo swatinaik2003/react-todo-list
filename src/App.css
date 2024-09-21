@@ -1,11 +1,22 @@
 .App {
   text-align: center;
-  max-width:1px;
-  border:1px saddlebrown;
-  margin:auto;
-  height:100;
-}
+  max-width: 500px;
+  border: 1px solid red;
+  margin: auto;
+  height: 100px;
 
+}
+.body {
+
+  height: 100px;
+  background : hotpink
+
+}
+.html {
+  height: 100px;
+  background : hotpink
+
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
