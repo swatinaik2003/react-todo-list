@@ -1,17 +1,38 @@
-import React from 'react';
-import './App.css';
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
+  const [tasks, setTasks] = useState([
+    { id: 1, name: "Shopping", completed: true },
+    { id: 2, name: "Cooking", completed: false },
+    { id: 3, name: "Watching Movies", completed: false },
+  ]);
+
+  const addTask = (taskName) => {
+    const newTask = {
+      id: tasks.length + 1,
+      name: taskName,
+      completed: false,
+    };
+    setTasks([...tasks, newTask]);
+  };
+
+  const handleTaskChange = (id) => {
+    setTasks(
+      tasks.map((task) =>
+        task.id === id ? { ...task, completed: !task.completed } : task
+      )
+    );
+  };
+
   return (
-    <div className="App" style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
-      {/* Header */}
-      <header className="header">
-        <h1>To-do List Application</h1>
-      </header>
-
-     
-
-      
+    <div className="App">
+      <Header />
+      <Main tasks={tasks} handleTaskChange={handleTaskChange} />
+      <Footer addTask={addTask} />
     </div>
   );
 }
