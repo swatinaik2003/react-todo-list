@@ -4,19 +4,19 @@
   margin: 0 auto;
   background-color: #fff;
   border-radius: 8px;
-  height:950px;
+  height:700px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header {
   color: black;
-  padding: 50px;
+  padding: 20px;
    text-align: center;
 }
 
 .main {
   margin: 20px;
-  padding: 30px;
+  padding: 20px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   background-color: #fafafa;
@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #e0e0e0;
 }
 
@@ -37,9 +37,9 @@
 .footer {
   background-color: #f9f9f9;
   border: 1px solid #e0e0e0;
-  padding: 50px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  padding: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,7 +47,7 @@
 
 footer input[type="text"] {
   flex: 1;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-right: 10px;
@@ -84,4 +84,17 @@ footer button:hover {
 
 input[type="checkbox"] {
   margin-right: 10px;
+}
+.main h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.main div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
 }
